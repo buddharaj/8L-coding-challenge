@@ -2,14 +2,14 @@ module.exports = {
   env: {
     es6: true,
     node: true,
-    mocha: true,
+    mocha: true
   },
   extends: [
-    'airbnb-base',
+    'airbnb-base'
   ],
   parserOptions: {
-    ecmaVersion: 'latest',
+    ecmaVersion: 'latest'
   },
   rules: {
-  },
-};
+  }
+}
