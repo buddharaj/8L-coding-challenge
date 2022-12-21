@@ -9,6 +9,10 @@ on:
   pull_request:
     branches: [ "master" ]
 
+env:
+  GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+
 jobs:
   build:
 
@@ -16,7 +20,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]
+        node-version: [18.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -27,6 +31,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    - name: Super-Linter
-      uses: github/super-linter@v4.9.7
     - run: npm test

@@ -1,4 +1,4 @@
-const constants = require('../constants');
+const constants = require('../constants')
 
 module.exports = {
 
@@ -7,11 +7,11 @@ module.exports = {
      * @param {string} inputString - input String
      * @return {string} - cleaned up string
      */
-  cleanedUp(inputString) {
+  cleanedUp (inputString) {
     if (typeof inputString !== 'string') {
-      throw new Error(constants.ERROR_INVALID_INPUT);
+      throw new Error(constants.ERROR_INVALID_INPUT)
     }
-    return inputString.replace(/[^0-9]/g, '');
-  },
+    return inputString.replace(/[^0-9]/g, '')
+  }
 
-};
+}

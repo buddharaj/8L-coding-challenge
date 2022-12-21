@@ -1,3 +1,3 @@
 module.exports = {
-  ERROR_INVALID_INPUT: 'Invalid Input',
-};
+  ERROR_INVALID_INPUT: 'Invalid Input'
+}
