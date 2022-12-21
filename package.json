@@ -4,7 +4,7 @@
   "description": "8th light assignment",
   "main": "index.js",
   "scripts": {
-    "test": "npm run lint -- --fix and mocha",
+    "test": "mocha",
     "lint": "eslint .",
     "eslint-check": "npm run lint -- --fix",
     "start": "node index.js"
